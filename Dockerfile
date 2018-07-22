@@ -6,7 +6,7 @@ RUN yum install -y git \
 && yum install -y initscripts
 
 RUN cd / \
-&& git clone https://github.com/person896/oneDoesSnapdrop.git
+&& git clone https://github.com/bluenevus/oneDoesSnapdrop.git
 
 RUN cd /oneDoesSnapdrop/packages/pwa && npm install -g gulp bower
 RUN cd /oneDoesSnapdrop/packages/pwa && npm install && bower install --allow-root
